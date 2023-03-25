@@ -27,3 +27,20 @@ header li a {
 color: blue;  
 text-decoration: none;  
 }  
+.square1 {   
+    width: 200px;
+	height: 200px;
+	margin: auto;
+	padding:10px; 
+    border-radius: 25px;
+    background:rgb(26, 40, 236);
+}
+.square2 {
+    width: 200px;
+	height: 100px;
+	margin: auto;
+    margin-top: -70px;
+	padding:10px; 
+    border-radius: 25px;
+    background:rgb(249, 180, 30);
+}
