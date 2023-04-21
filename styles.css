@@ -1,36 +1,87 @@
-body   
-{  
-height: 125vh;  
-margin-top: 80px;  
-padding: 30px;  
-background-size: cover;  
-font-family: sans-serif;  
-}  
+body {
+    height: 125vh;
+    margin-top: -20px;
+    padding: 30px;
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: #5dc1EE; /* Background color for the whole website */
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3479e9;
+    padding: 5px;
+  }
+  
+  .header-text, .search-container {
+    display: inline-block;
+  }
+  
+  .search-container form {
+    display: flex;
+  }
+  
+  .search-container input[type="text"], .search-container button {
+    margin: 0 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #3e8e41;
+  }
+
 header {  
 background-color: orange;  
-position: fixed;  
+position: static;  /* STATIC TO MAKE IT STAY STILL WHEN YOU SCROLL DOWN.*/
 left: 0;  
 right: 0;  
-top: 5px;  
+
 height: 30px;  
 display: flex;  
-align-items: center;  
+align-items: center; 
+justify-content: center;
+overflow: hidden; 
 box-shadow: 0 0 25px 0 black;  
 }  
 header * {  
-display: inline;  
-}  
+display: inline;
+position: relative; /* make sure the pseudo-element is positioned relative to the parent element */
+padding: 0 15px; /* add padding here */
+
+}
+
+header *:not(:last-child)::after
+{
+    content: "|"; /* set the content to the pipe character */
+    position: absolute; /* position the pseudo-element absolutely */
+    right: -25px; /* adjust the position of the pseudo-element */
+    transform: translateY(5%);
+    color: black; /* set the color of the pseudo-element */
+    font-weight: bold; /* add this line to make the line bold */
+
+  }  
 header li {  
 margin: 20px;  
 }  
 header li a {  
 color: blue;  
-text-decoration: none;  
+text-decoration: none; /* adds a line below the text */
+font-weight: bold; /* Make the letters in header li a bold */  
 }  
 .square1 {   
     width: 200px;
 	height: 200px;
-	margin: auto;
+  margin: 50px auto 0; /* Add margin-top value */
 	padding:10px; 
     border-radius: 25px;
     background:rgb(26, 40, 236);
