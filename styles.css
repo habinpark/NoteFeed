@@ -78,7 +78,7 @@ color: blue;
 text-decoration: none; /* adds a line below the text */
 font-weight: bold; /* Make the letters in header li a bold */  
 }  
-.square1 {   
+.square1, .square3, .square5 {   
     width: 200px;
 	height: 200px;
   margin: 50px auto 0; /* Add margin-top value */
@@ -86,7 +86,7 @@ font-weight: bold; /* Make the letters in header li a bold */
     border-radius: 25px;
     background:rgb(26, 40, 236);
 }
-.square2 {
+.square2, .square4, .square6 {
     width: 200px;
 	height: 100px;
 	margin: auto;
